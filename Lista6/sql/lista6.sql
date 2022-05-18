@@ -3,7 +3,7 @@ create database lista6;
 use lista6;
 
 create table agenda (
-	id_agenda   		int 			not null auto_increment,
+	id_agenda   		int 		not null auto_increment,
     nome 		        varchar(50)	not null,
     apelido        		varchar(40)	not null, 
     endereco            varchar(70)	not null,
