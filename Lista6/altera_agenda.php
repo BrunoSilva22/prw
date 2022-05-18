@@ -17,8 +17,8 @@
 </head>
 <body>
     <h1>Alteração de Contatos</h1>
-    <div id="teste">
-        <form method="post" action="cadastro_agenda_exe.php">
+    <div id="id_agenda">
+        <form method="post" action="altera_agenda_exe.php">
             <fieldset>
                 <legend>Alteração</legend>
                 <div class="form-item">
@@ -59,8 +59,10 @@
                 </div>
 
                 <div class="form-item">
-                    <input id="btn" type="submit" value="Alterar" >
+                    <input id="btn" type="submit" value="Enviar" >
+                    <a href='index.php'> Voltar</a>
                 </div>
+                <input name="id_agenda" type="hidden" value="<?php echo $row['id_agenda']?>">
             </fieldset>
         </form>
     </div>
