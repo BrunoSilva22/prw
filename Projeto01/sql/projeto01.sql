@@ -7,5 +7,7 @@ create table usuario (
     nome_usuario 		varchar(100)	not null,
     email_usuario 		varchar(100)	not null, 
     telefone_usuario	varchar(30)		not null, 
+    foto_blob           blob,
+    foto_nome           varchar(100),
     primary key (id_usuario)
 );
