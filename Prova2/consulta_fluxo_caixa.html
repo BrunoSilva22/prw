@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Fluxo de Caixa</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Consulta Fluxo de Caixa</h1>
+    <div id="teste">
+        <form method="post" action="consulta_fluxo_caixa.php">
+            <fieldset>
+                <legend>Consulta</legend>
+                <div class="form-item">
+                    <label id="tipo"></label>Tipo de consulta:
+                    <input type="radio" name="tipos" value="Entrada"> Entrada
+                    <input type="radio" name="tipos" value="Saida"> Saída
+                    <input type="radio" name="tipos" value="Saldo"> Saldo
+                </div>
+                <div class="form-item">
+                    <input id="btn" type="submit" value="Enviar" >
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
